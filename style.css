@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 300px auto;
+  max-width: 39%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  background-image: url("list.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+div {
+  flex-basis: 15%;
+  flex-grow: 1;
+  height: 15vh;
+  border: 3px solid white;
+}
+@media (orientation: landscape) and (min-width: 0px) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 105px auto;
+    max-width: 45%;
+  }
+}
+@media (min-width: 0px) and (orientation: portrait) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 170px auto;
+    max-width: 95%;
+  }
+}
+@media (orientation: landscape) and (min-width: 534px) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 115px auto;
+    max-width: 45%;
+  }
+}
+@media (min-width: 321px) and (orientation: portrait) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 200px auto;
+    max-width: 95%;
+  }
+}
+@media (min-width: 1000px) and (orientation: landscape) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 240px auto;
+    max-width: 55%;
+  }
+}
+@media (min-width: 767px) and (orientation: portrait) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 320px auto;
+    max-width: 95%;
+  }
+}
+
+@media (min-width: 1365px) and (orientation: landscape) {
+  div {
+    height: 16vh;
+  }
+  body {
+    margin: 290px auto;
+    max-width: 40%;
+  }
+}
+@media (min-width: 1023px) and (orientation: portrait) {
+  div {
+    height: 15vh;
+  }
+  body {
+    margin: 430px auto;
+    max-width: 45%;
+  }
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.gray {
+  background-color: gray;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.violet {
+  background-color: violet;
+}
+.cadetblue {
+  background-color: cadetblue;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.off {
+  background-color: #eee;
+}
+
+.hidden {
+  background-color: #000;
+}
