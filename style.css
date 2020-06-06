@@ -5,131 +5,166 @@
 }
 
 body {
-  position: relative;
-  margin: 300px auto;
-  max-width: 39%;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(
+      45deg,
+      rgb(20, 69, 134) 0%,
+      hsla(352, 96%, 45%, 0) 70%
+    ),
+    linear-gradient(135deg, rgb(52, 179, 126) 10%, hsla(253, 95%, 42%, 0) 80%),
+    linear-gradient(225deg, rgb(28, 138, 136) 10%, hsla(179, 91%, 45%, 0) 80%),
+    linear-gradient(315deg, rgb(30, 156, 28) 100%, hsla(119, 96%, 49%, 0) 70%);
+}
+
+.wrapper {
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
-  background-color: #000;
-  background-image: url("list.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
+  height: 60%;
 }
 
-div {
+.element {
   flex-basis: 15%;
   flex-grow: 1;
-  height: 15vh;
-  border: 3px solid white;
-}
-@media (orientation: landscape) and (min-width: 0px) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 105px auto;
-    max-width: 45%;
-  }
-}
-@media (min-width: 0px) and (orientation: portrait) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 170px auto;
-    max-width: 95%;
-  }
-}
-@media (orientation: landscape) and (min-width: 534px) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 115px auto;
-    max-width: 45%;
-  }
-}
-@media (min-width: 321px) and (orientation: portrait) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 200px auto;
-    max-width: 95%;
-  }
-}
-@media (min-width: 1000px) and (orientation: landscape) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 240px auto;
-    max-width: 55%;
-  }
-}
-@media (min-width: 767px) and (orientation: portrait) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 320px auto;
-    max-width: 95%;
-  }
-}
-
-@media (min-width: 1365px) and (orientation: landscape) {
-  div {
-    height: 16vh;
-  }
-  body {
-    margin: 290px auto;
-    max-width: 40%;
-  }
-}
-@media (min-width: 1023px) and (orientation: portrait) {
-  div {
-    height: 15vh;
-  }
-  body {
-    margin: 430px auto;
-    max-width: 45%;
-  }
+  border: 3px solid rgb(36, 150, 170);
+  border-radius: 15px;
+  margin: 5px;
+  font-size: 34px;
 }
 
 .red {
-  background-color: red;
+  position: relative;
+  background-color: rgb(197, 225, 240);
 }
+
 .blue {
-  background-color: blue;
+  position: relative;
+  background-color: rgb(197, 225, 240);
 }
 .green {
-  background-color: green;
+  background-color: rgb(197, 225, 240);
+  position: relative;
 }
 .brown {
-  background-color: brown;
+  background-color: rgb(197, 225, 240);
+  position: relative;
 }
 .gray {
-  background-color: gray;
+  background-color: rgb(197, 225, 240);
+  position: relative;
 }
 .lightgreen {
-  background-color: lightgreen;
+  background-color: rgb(197, 225, 240);
+  position: relative;
 }
 .violet {
-  background-color: violet;
+  background-color: rgb(197, 225, 240);
+  position: relative;
 }
 .cadetblue {
-  background-color: cadetblue;
+  background-color: rgb(197, 225, 240);
+  position: relative;
 }
 .yellow {
-  background-color: yellow;
+  background-color: rgb(197, 225, 240);
+  position: relative;
+}
+
+.red::before {
+  content: "\f0e7";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blue::before {
+  content: "\f1b3";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.green::before {
+  content: "\f1bb";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.brown::before {
+  content: "\f084";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gray::before {
+  content: "\f0e9";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lightgreen::before {
+  content: "\f109";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.violet::before {
+  content: "\f21c";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cadetblue::before {
+  content: "\f0f9";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.yellow::before {
+  content: "\f186";
+  font-family: "FontAwesome";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .off {
-  background-color: #eee;
+  background-color: transparent;
+  border: none;
+  color: transparent;
 }
-
 .hidden {
-  background-color: #000;
+  position: relative;
+  display: flex;
+  background: black;
 }
