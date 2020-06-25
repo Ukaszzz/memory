@@ -22,22 +22,6 @@ body {
     linear-gradient(315deg, rgb(30, 156, 28) 100%, hsla(119, 96%, 49%, 0) 70%);
 }
 
-.wrapper {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  height: 60%;
-}
-
-.element {
-  flex-basis: 15%;
-  flex-grow: 1;
-  border: 3px solid rgb(36, 150, 170);
-  border-radius: 15px;
-  margin: 5px;
-  font-size: 34px;
-}
-
 .red {
   position: relative;
   background-color: rgb(197, 225, 240);
@@ -160,11 +144,99 @@ body {
 
 .off {
   background-color: transparent;
-  border: none;
+
   color: transparent;
 }
 .hidden {
   position: relative;
   display: flex;
   background: black;
+}
+
+.wrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+}
+
+.element {
+  flex-basis: 30%;
+  flex-grow: 1;
+  border: 3px solid rgb(36, 150, 170);
+  border-radius: 15px;
+
+  font-size: 34px;
+}
+.wrapp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.863);
+  display: none;
+}
+.box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40%;
+  width: 60%;
+  background-color: rgb(41, 41, 41);
+}
+
+.box h1 {
+  font-size: 60px;
+}
+
+.box p {
+  font-size: 30px;
+}
+
+.box button {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: aqua;
+  background-color: black;
+  border: aqua;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    width: 70%;
+
+    height: 75%;
+  }
+
+  .element {
+    font-size: 40px;
+  }
+}
+@media (min-width: 900px) {
+  .wrapper {
+    width: 60%;
+
+    height: 70%;
+  }
+
+  .element {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 50%;
+
+    height: 75%;
+  }
+
+  .element {
+    font-size: 65px;
+  }
 }

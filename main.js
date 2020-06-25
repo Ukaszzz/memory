@@ -1,3 +1,6 @@
+const popup = document.querySelector(".wrapp");
+const resultTime = document.querySelector(".result");
+
 const cardsColor = [
   "red",
   "red",
@@ -44,7 +47,9 @@ const clickCard = function () {
     activeCards[1] = activeCard;
     setTimeout(function () {
       if (activeCards[0].className === activeCards[1].className) {
-        activeCards.forEach((card) => card.classList.add("off"));
+        activeCards.forEach((card) => {
+          card.classList.add("off"), (card.style.border = "none");
+        });
         gameResult++;
 
         cards = cards.filter((card) => !card.classList.contains("off"));
@@ -52,8 +57,9 @@ const clickCard = function () {
         if (gameResult == gamePairs) {
           const endTime = new Date().getTime();
           const gameTime = (endTime - startTime) / 1000;
-          alert(`udało się! Twój wynik to: ${gameTime} sekund`);
-          location.reload();
+          popup.style.display = "block";
+          resultTime.textContent = gameTime;
+          // location.reload();
         }
       } else {
         activeCards.forEach((card) => card.classList.add("hidden"));
@@ -76,7 +82,7 @@ const init = function () {
       card.classList.add("hidden");
       card.addEventListener("click", clickCard);
     });
-  }, 2000);
+  }, 4000);
 };
 
 init();
