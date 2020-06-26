@@ -1,5 +1,6 @@
 const popup = document.querySelector(".wrapp");
 const resultTime = document.querySelector(".result");
+const startBtn = document.querySelector("button");
 
 const cardsColor = [
   "red",
@@ -86,3 +87,5 @@ const init = function () {
 };
 
 init();
+
+startBtn.addEventListener("click", () => location.reload());

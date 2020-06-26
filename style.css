@@ -188,23 +188,34 @@ body {
   transform: translate(-50%, -50%);
   height: 40%;
   width: 60%;
-  background-color: rgb(41, 41, 41);
+  border-radius: 25px;
+  background: radial-gradient(circle, rgb(43, 44, 46) 0%, rgb(25, 25, 25) 93%);
+  z-index: 2;
 }
 
 .box h1 {
   font-size: 60px;
+  color: white;
+  text-transform: uppercase;
 }
 
 .box p {
   font-size: 30px;
+  color: white;
 }
 
 .box button {
   font-size: 20px;
-  padding: 10px 20px;
-  color: aqua;
-  background-color: black;
+  padding: 15px 30px;
+  background-color: rgb(35, 194, 3);
+
+  border-radius: 7px;
   border: aqua;
+}
+
+span {
+  font-size: 25px;
+  color: rgb(209, 83, 24);
 }
 
 @media (min-width: 600px) {
